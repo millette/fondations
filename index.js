@@ -5,6 +5,8 @@ import nooe from "./lib/nooe.js"
 import mycharityfund from "./lib/mycharityfund.js"
 import charitableimpact from "./lib/charitableimpact.js"
 
+// See also: <https://apps.cra-arc.gc.ca/ebci/hacc/srch/pub/dsplyBscSrch?request_locale=fr> (requires captcha)
+
 const fetchAll = async (searchFor) => Promise.all([
   benevity(searchFor), // slow
   canadaHelps(searchFor), // 3rd fastest
