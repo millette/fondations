@@ -2,6 +2,11 @@
   "name": "fondations",
   "version": "0.1.0",
   "type": "module",
+  "exports": "./index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": "./cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

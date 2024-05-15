@@ -1,5 +1,5 @@
 // self
 import { fetchAll } from "./index.js"
 
-const [a, b, c, d, e] = await fetchAll("Jacques de Champlain")
-console.log(JSON.stringify({ a, b, c, d, e }, null, 2))
+const [benevity, canadaHelps, nooe, mycharityfund, charitableimpact] = await fetchAll("Jacques de Champlain")
+console.log(JSON.stringify({ benevity, canadaHelps, nooe, mycharityfund, charitableimpact }, null, 2))
