@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@orama/orama':
+        specifier: ^2.0.18
+        version: 2.0.18
+      '@orama/plugin-data-persistence':
+        specifier: ^2.0.18
+        version: 2.0.18
+      '@sindresorhus/transliterate':
+        specifier: ^1.6.0
+        version: 1.6.0
       hast-util-from-html:
         specifier: ^2.0.1
         version: 2.0.1
@@ -31,6 +40,21 @@ importers:
         version: 5.0.0
 
 packages:
+
+  '@msgpack/msgpack@2.8.0':
+    resolution: {integrity: sha512-h9u4u/jiIRKbq25PM+zymTyW6bhTzELvOoUd+AvYriWOAKpLGnIamaET3pnHYoI5iYphAHBI4ayx0MehR+VVPQ==}
+    engines: {node: '>= 10'}
+
+  '@orama/orama@2.0.18':
+    resolution: {integrity: sha512-KSty7+r8JxXv3iCuhLqQfwMvUiSWnXPaTPQPPoVPpwdvynEKcp1JNWKzTMB2tISDggf8jKhQXHEP3QXlGkvvtA==}
+    engines: {node: '>= 16.0.0'}
+
+  '@orama/plugin-data-persistence@2.0.18':
+    resolution: {integrity: sha512-pT7I6/FoYx298ghg6Sp8rK1FWf+oe0wcZJ5kPVewtzqkKJ0FwBFZy42Oxv5L/0Ul3foOqe3b5cJXR+9TKebnhg==}
+
+  '@sindresorhus/transliterate@1.6.0':
+    resolution: {integrity: sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==}
+    engines: {node: '>=12'}
 
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
@@ -80,9 +104,16 @@ packages:
     resolution: {integrity: sha512-9S6m9Sukh1cZNknO1CWAr2QAWsbKLafQiyM5gZ7VgXHeuaoUwffKN4q6NC4A/Mf9iiPlOXQEKW/Mv/mh9/3YFA==}
     hasBin: true
 
+  dpack@0.6.22:
+    resolution: {integrity: sha512-WGPNlW2OAE7Bj0eODMpAHUcEqxrlg01e9OFZDxQodminIgC194/cRHT7K04Z1j7AUEWTeeplYGrIv/xRdwU9Hg==}
+
   entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
+
+  escape-string-regexp@5.0.0:
+    resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
+    engines: {node: '>=12'}
 
   hast-util-from-html@2.0.1:
     resolution: {integrity: sha512-RXQBLMl9kjKVNkJTIO6bZyb2n+cUH8LFaSSzo82jiLT6Tfc+Pt7VQCS+/h3YwG4jaNE2TA2sdJisGWR+aJrp0g==}
@@ -212,6 +243,20 @@ packages:
 
 snapshots:
 
+  '@msgpack/msgpack@2.8.0': {}
+
+  '@orama/orama@2.0.18': {}
+
+  '@orama/plugin-data-persistence@2.0.18':
+    dependencies:
+      '@msgpack/msgpack': 2.8.0
+      '@orama/orama': 2.0.18
+      dpack: 0.6.22
+
+  '@sindresorhus/transliterate@1.6.0':
+    dependencies:
+      escape-string-regexp: 5.0.0
+
   '@types/hast@3.0.4':
     dependencies:
       '@types/unist': 3.0.2
@@ -248,7 +293,11 @@ snapshots:
 
   direction@2.0.1: {}
 
+  dpack@0.6.22: {}
+
   entities@4.5.0: {}
+
+  escape-string-regexp@5.0.0: {}
 
   hast-util-from-html@2.0.1:
     dependencies:
