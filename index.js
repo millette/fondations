@@ -7,11 +7,11 @@ import charitableimpact from "./lib/charitableimpact.js"
 
 // See also: <https://apps.cra-arc.gc.ca/ebci/hacc/srch/pub/dsplyBscSrch?request_locale=fr> (requires captcha)
 
-const fetchAll = async (searchFor) => Promise.all([
+const fetchAll = async (searchFor, options) => Promise.all([
   benevity(searchFor), // slow
   canadaHelps(searchFor), // 3rd fastest
   nooe(searchFor), // fast and complete
-  mycharityfund(searchFor), // fastest
+  mycharityfund(searchFor, options), // fastest
   charitableimpact(searchFor), // slow
 ])
 
