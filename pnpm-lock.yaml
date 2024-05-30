@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@orama/orama':
-        specifier: ^2.0.18
-        version: 2.0.18
+        specifier: ^2.0.19
+        version: 2.0.19
       '@orama/plugin-data-persistence':
         specifier: ^2.0.18
         version: 2.0.18
@@ -50,6 +50,10 @@ packages:
 
   '@orama/orama@2.0.18':
     resolution: {integrity: sha512-KSty7+r8JxXv3iCuhLqQfwMvUiSWnXPaTPQPPoVPpwdvynEKcp1JNWKzTMB2tISDggf8jKhQXHEP3QXlGkvvtA==}
+    engines: {node: '>= 16.0.0'}
+
+  '@orama/orama@2.0.19':
+    resolution: {integrity: sha512-9nlF5iYUghewRt2TDmAJO5TN4hYFPhql4d2ZAdJYJtGSIi2BZjMNQIqQ874w0q/rur67wp0AWLb020EakEN0aA==}
     engines: {node: '>= 16.0.0'}
 
   '@orama/plugin-data-persistence@2.0.18':
@@ -252,6 +256,8 @@ snapshots:
   '@msgpack/msgpack@2.8.0': {}
 
   '@orama/orama@2.0.18': {}
+
+  '@orama/orama@2.0.19': {}
 
   '@orama/plugin-data-persistence@2.0.18':
     dependencies:

@@ -16,7 +16,7 @@
     "build": "echo no build, continue."
   },
   "dependencies": {
-    "@orama/orama": "^2.0.18",
+    "@orama/orama": "^2.0.19",
     "@orama/plugin-data-persistence": "^2.0.18",
     "@sindresorhus/transliterate": "^1.6.0",
     "fuzzysort": "^3.0.1",
