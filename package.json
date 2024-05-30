@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@orama/orama": "^2.0.19",
-    "@orama/plugin-data-persistence": "^2.0.18",
+    "@orama/plugin-data-persistence": "^2.0.19",
     "@sindresorhus/transliterate": "^1.6.0",
     "fuzzysort": "^3.0.1",
     "hast-util-from-html": "^2.0.1",
