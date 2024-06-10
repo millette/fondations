@@ -16,11 +16,7 @@
     "build": "echo no build, continue."
   },
   "dependencies": {
-    "@crob/damerau-levenshtein": "^1.0.1",
-    "@orama/orama": "^2.0.19",
-    "@orama/plugin-data-persistence": "^2.0.19",
     "@sindresorhus/transliterate": "^1.6.0",
-    "damerau-levenshtein": "^1.0.8",
     "fuzzysort": "^3.0.1",
     "hast-util-from-html": "^2.0.1",
     "hast-util-select": "^6.0.2",

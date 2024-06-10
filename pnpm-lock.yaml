@@ -8,21 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@crob/damerau-levenshtein':
-        specifier: ^1.0.1
-        version: 1.0.1
-      '@orama/orama':
-        specifier: ^2.0.19
-        version: 2.0.19
-      '@orama/plugin-data-persistence':
-        specifier: ^2.0.19
-        version: 2.0.19
       '@sindresorhus/transliterate':
         specifier: ^1.6.0
         version: 1.6.0
-      damerau-levenshtein:
-        specifier: ^1.0.8
-        version: 1.0.8
       fuzzysort:
         specifier: ^3.0.1
         version: 3.0.1
@@ -52,20 +40,6 @@ importers:
         version: 5.0.0
 
 packages:
-
-  '@crob/damerau-levenshtein@1.0.1':
-    resolution: {integrity: sha512-TTGsAIM85cu1qjbuT035j09OtbpjDaYtsfrsslQRpVlHnQz5QmzrdleCRpfiORPCuGYC0oCJlkjjBC+O9bifhg==}
-
-  '@msgpack/msgpack@2.8.0':
-    resolution: {integrity: sha512-h9u4u/jiIRKbq25PM+zymTyW6bhTzELvOoUd+AvYriWOAKpLGnIamaET3pnHYoI5iYphAHBI4ayx0MehR+VVPQ==}
-    engines: {node: '>= 10'}
-
-  '@orama/orama@2.0.19':
-    resolution: {integrity: sha512-9nlF5iYUghewRt2TDmAJO5TN4hYFPhql4d2ZAdJYJtGSIi2BZjMNQIqQ874w0q/rur67wp0AWLb020EakEN0aA==}
-    engines: {node: '>= 16.0.0'}
-
-  '@orama/plugin-data-persistence@2.0.19':
-    resolution: {integrity: sha512-u/ligext2UZuvfM3Nm1JckL7Y6MbT85rXODKtJzZuPdpc2+hilGon9Fmkp00ENBx+dAtzcK+3Q00AY1V5T3Mfg==}
 
   '@sindresorhus/transliterate@1.6.0':
     resolution: {integrity: sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==}
@@ -117,9 +91,6 @@ packages:
   css-selector-parser@3.0.5:
     resolution: {integrity: sha512-3itoDFbKUNx1eKmVpYMFyqKX04Ww9osZ+dLgrk6GEv6KMVeXUhUnp4I5X+evw+u3ZxVU6RFXSSRxlTeMh8bA+g==}
 
-  damerau-levenshtein@1.0.8:
-    resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
-
   decode-named-character-reference@1.0.2:
     resolution: {integrity: sha512-O8x12RzrUF8xyVcY0KJowWsmaJxQbmy0/EtnNtHRpsOcT7dFk5W598coHqBVpmWo1oQQfsCqfCmkZN5DJrZVdg==}
 
@@ -137,9 +108,6 @@ packages:
   direction@2.0.1:
     resolution: {integrity: sha512-9S6m9Sukh1cZNknO1CWAr2QAWsbKLafQiyM5gZ7VgXHeuaoUwffKN4q6NC4A/Mf9iiPlOXQEKW/Mv/mh9/3YFA==}
     hasBin: true
-
-  dpack@0.6.22:
-    resolution: {integrity: sha512-WGPNlW2OAE7Bj0eODMpAHUcEqxrlg01e9OFZDxQodminIgC194/cRHT7K04Z1j7AUEWTeeplYGrIv/xRdwU9Hg==}
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -331,18 +299,6 @@ packages:
 
 snapshots:
 
-  '@crob/damerau-levenshtein@1.0.1': {}
-
-  '@msgpack/msgpack@2.8.0': {}
-
-  '@orama/orama@2.0.19': {}
-
-  '@orama/plugin-data-persistence@2.0.19':
-    dependencies:
-      '@msgpack/msgpack': 2.8.0
-      '@orama/orama': 2.0.19
-      dpack: 0.6.22
-
   '@sindresorhus/transliterate@1.6.0':
     dependencies:
       escape-string-regexp: 5.0.0
@@ -379,8 +335,6 @@ snapshots:
 
   css-selector-parser@3.0.5: {}
 
-  damerau-levenshtein@1.0.8: {}
-
   decode-named-character-reference@1.0.2:
     dependencies:
       character-entities: 2.0.2
@@ -394,8 +348,6 @@ snapshots:
       dequal: 2.0.3
 
   direction@2.0.1: {}
-
-  dpack@0.6.22: {}
 
   emoji-regex@10.3.0: {}
 
