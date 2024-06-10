@@ -4,6 +4,7 @@ tmp-output/
 fetches/
 maybe/
 wip/
+old-jsons/
 all-the-names.json
 bilingues-dist.json
 bilingues-hmm.json
