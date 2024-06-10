@@ -97,7 +97,6 @@ test("mycharityfund", async (t) => {
   await t.test("ok", async() => {
     const search = "Fondation Jacques-De Champlain"
     const results = await mycharityfund(search)
-    // console.log("RESULTS", results)
     assert.strictEqual(results.id, fondations[search])
     assert.strictEqual(results.data.data.name, search)
   })
