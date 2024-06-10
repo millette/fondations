@@ -27,6 +27,7 @@
     "hast-util-to-text": "^4.0.2",
     "load-json-file": "^7.0.1",
     "meow": "^13.2.0",
+    "ora": "^8.0.1",
     "parse-entities": "^4.0.1",
     "write-json-file": "^5.0.0"
   }
