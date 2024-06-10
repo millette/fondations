@@ -12,3 +12,6 @@ tmp/
 wip/
 mycharityfund-transliterate-v2.json
 mycharityfund-transliterate-v3.json
+bilingues-dist.json
+bilingues-hmm.json
+bilingues.json
